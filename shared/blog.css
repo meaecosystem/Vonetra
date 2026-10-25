@@ -949,7 +949,7 @@ ul, ol { list-style: none; }
   line-height: 1.65;
 }
 
-/* ---------- Related articles ---------- */
+/* ---------- Related articles (ringkasan box, 1 paragraf) ---------- */
 
 .mea-related {
   padding: 40px 0 60px;
@@ -960,6 +960,24 @@ ul, ol { list-style: none; }
   font-family: var(--font-display);
   font-size: 22px;
   margin-bottom: 16px;
+}
+
+/* ---------- Related ARTICLES (card grid, 2-3 artikel mirip) ----------
+   Diisi runtime oleh shared/related-articles.js berdasarkan kategori +
+   keyword overlap dari data/articles.json. Pakai ulang .mea-article-card
+   & .mea-article-grid (sama kayak homepage) biar konsisten visualnya. */
+
+.mea-related-articles {
+  padding: 8px 0 56px;
+}
+.mea-related-articles h2 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.mea-related-articles .mea-article-grid {
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  padding-bottom: 0;
 }
 
 /* ============================================================

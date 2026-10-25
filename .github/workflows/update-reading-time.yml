@@ -1,0 +1,47 @@
+name: Sync reading time
+
+# Jalan otomatis tiap ada push yang nyentuh artikel (.html di folder
+# bahasa) atau script-nya sendiri. Juga bisa dipicu manual lewat tab
+# Actions (workflow_dispatch).
+on:
+  push:
+    branches: [main]
+    paths:
+      - "id/**.html"
+      - "en/**.html"
+      - "ja/**.html"
+      - "zh/**.html"
+      - "ko/**.html"
+      - "scripts/update_reading_time.py"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync-reading-time:
+    runs-on: ubuntu-latest
+    # Jaga-jaga biar commit otomatis dari bot sendiri gak bikin loop
+    # trigger ulang workflow ini.
+    if: github.actor != 'github-actions[bot]'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Hitung ulang reading time semua artikel
+        run: python3 scripts/update_reading_time.py
+
+      - name: Commit & push kalau ada perubahan
+        run: |
+          git config user.name "Vonetra Bot"
+          git config user.email "bot@vonetra.meaecosystem.com"
+          if git diff --quiet; then
+            echo "Reading time sudah sinkron, tidak ada yang perlu di-commit."
+          else
+            git add -- id en ja zh ko
+            git commit -m "chore: sinkronkan reading time otomatis"
+            git push
+          fi

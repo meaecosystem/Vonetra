@@ -1,0 +1,54 @@
+name: Generate OG images
+
+# Jalan otomatis tiap ada artikel baru/berubah atau articles.json
+# ke-update. Bikin ulang og/<lang>/<id>.png + pasang meta tag
+# og:image/twitter:card kalau belum ada (script-nya sendiri skip
+# artikel yang udah punya meta tag, jadi aman dijalankan berkali-kali).
+on:
+  push:
+    branches: [main]
+    paths:
+      - "id/**.html"
+      - "en/**.html"
+      - "ja/**.html"
+      - "zh/**.html"
+      - "ko/**.html"
+      - "data/articles.json"
+      - "scripts/generate_og_images.py"
+      - "scripts/assets/**"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  generate-og:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install font CJK (buat judul artikel ja/zh/ko)
+        run: sudo apt-get update && sudo apt-get install -y fonts-noto-cjk
+
+      - name: Install dependency Python
+        run: pip install --break-system-packages pillow cairosvg
+
+      - name: Generate gambar OG + pasang meta tag
+        run: python3 scripts/generate_og_images.py
+
+      - name: Commit & push kalau ada perubahan
+        run: |
+          git config user.name "Vonetra Bot"
+          git config user.email "bot@vonetra.meaecosystem.com"
+          if git diff --quiet && [ -z "$(git status --porcelain og/)" ]; then
+            echo "OG image sudah sinkron, tidak ada yang perlu di-commit."
+          else
+            git add -- og id en ja zh ko
+            git commit -m "chore: sinkronkan gambar OG otomatis"
+            git push
+          fi

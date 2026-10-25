@@ -4704,6 +4704,70 @@
     "lang": "id"
   },
   {
+    "id": "mea-news-ganti-nama-jadi-newsolva",
+    "title": "MEA News Is Now Newsolva",
+    "desc": "MEA News has officially been renamed to Newsolva and is fully live at newsolva.meaecosystem.com. This news aggregator now comes with an engine that groups related news into a single timeline.",
+    "category": "tentang",
+    "date": "2026-10-23",
+    "icon": "gift",
+    "keywords": [
+      "Newsolva",
+      "MEA News rebranding",
+      "nama baru MEA News",
+      "newsolva.meaecosystem.com"
+    ],
+    "url": "/en/mea-news-ganti-nama-jadi-newsolva.html",
+    "lang": "en"
+  },
+  {
+    "id": "mea-news-ganti-nama-jadi-newsolva",
+    "title": "MEA Newsが「Newsolva」に改名",
+    "desc": "MEA Newsは正式にNewsolvaへ改名し、newsolva.meaecosystem.comで完全に稼働しています。関連するニュースを1つの時系列にまとめるエンジンも新たに搭載されました。",
+    "category": "tentang",
+    "date": "2026-10-23",
+    "icon": "gift",
+    "keywords": [
+      "Newsolva",
+      "MEA News rebranding",
+      "nama baru MEA News",
+      "newsolva.meaecosystem.com"
+    ],
+    "url": "/ja/mea-news-ganti-nama-jadi-newsolva.html",
+    "lang": "ja"
+  },
+  {
+    "id": "mea-news-ganti-nama-jadi-newsolva",
+    "title": "MEA News更名为Newsolva",
+    "desc": "MEA News正式更名为Newsolva，并已在newsolva.meaecosystem.com完全上线。这个新闻聚合器现在配备了能将相关新闻归纳成一条时间线的引擎。",
+    "category": "tentang",
+    "date": "2026-10-23",
+    "icon": "gift",
+    "keywords": [
+      "Newsolva",
+      "MEA News rebranding",
+      "nama baru MEA News",
+      "newsolva.meaecosystem.com"
+    ],
+    "url": "/zh/mea-news-ganti-nama-jadi-newsolva.html",
+    "lang": "zh"
+  },
+  {
+    "id": "mea-news-ganti-nama-jadi-newsolva",
+    "title": "MEA News, Newsolva로 이름 변경",
+    "desc": "MEA News가 공식적으로 Newsolva로 이름을 변경하고 newsolva.meaecosystem.com에서 완전히 서비스 중입니다. 관련 뉴스를 하나의 타임라인으로 묶어주는 엔진도 새로 탑재됐습니다.",
+    "category": "tentang",
+    "date": "2026-10-23",
+    "icon": "gift",
+    "keywords": [
+      "Newsolva",
+      "MEA News rebranding",
+      "nama baru MEA News",
+      "newsolva.meaecosystem.com"
+    ],
+    "url": "/ko/mea-news-ganti-nama-jadi-newsolva.html",
+    "lang": "ko"
+  },
+  {
     "id": "rebranding-produk-mea-ecosystem-yang-akan-datang",
     "title": "Rebranding Produk MEA Ecosystem yang Akan Datang",
     "desc": "Empat produk MEA Ecosystem lainnya -- MEA Link, MEA Data, MEA Trade, dan MEA Play -- juga akan berganti nama menjadi Selfolyx, Daivora, Bursalyx, dan Playzora. Rencana rebranding ini masih dalam tahap persiapan dan belum dieksekusi sepenuhnya.",
@@ -4719,6 +4783,74 @@
       "rebranding MEA Ecosystem"
     ],
     "lang": "id"
+  },
+  {
+    "id": "rebranding-produk-mea-ecosystem-yang-akan-datang",
+    "title": "Upcoming MEA Ecosystem Product Rebrands",
+    "desc": "Four more MEA Ecosystem products -- MEA Link, MEA Data, MEA Trade, and MEA Play -- are also set to be renamed to Selfolyx, Daivora, Bursalyx, and Playzora. This rebrand plan is still in preparation and not yet fully executed.",
+    "category": "tentang",
+    "date": "2026-10-23",
+    "icon": "gift",
+    "keywords": [
+      "Selfolyx",
+      "Daivora",
+      "Bursalyx",
+      "Playzora",
+      "rebranding MEA Ecosystem"
+    ],
+    "url": "/en/rebranding-produk-mea-ecosystem-yang-akan-datang.html",
+    "lang": "en"
+  },
+  {
+    "id": "rebranding-produk-mea-ecosystem-yang-akan-datang",
+    "title": "今後予定されているMEA Ecosystem製品のリブランディング",
+    "desc": "MEA Link、MEA Data、MEA Trade、MEA Playの4製品も、Selfolyx、Daivora、Bursalyx、Playzoraへの改名が予定されています。このリブランディング計画はまだ準備段階で、完全には実行されていません。",
+    "category": "tentang",
+    "date": "2026-10-23",
+    "icon": "gift",
+    "keywords": [
+      "Selfolyx",
+      "Daivora",
+      "Bursalyx",
+      "Playzora",
+      "rebranding MEA Ecosystem"
+    ],
+    "url": "/ja/rebranding-produk-mea-ecosystem-yang-akan-datang.html",
+    "lang": "ja"
+  },
+  {
+    "id": "rebranding-produk-mea-ecosystem-yang-akan-datang",
+    "title": "MEA Ecosystem即将进行的产品更名",
+    "desc": "另外四款MEA Ecosystem产品——MEA Link、MEA Data、MEA Trade和MEA Play——也计划更名为Selfolyx、Daivora、Bursalyx和Playzora。该更名计划仍在准备阶段，尚未完全执行。",
+    "category": "tentang",
+    "date": "2026-10-23",
+    "icon": "gift",
+    "keywords": [
+      "Selfolyx",
+      "Daivora",
+      "Bursalyx",
+      "Playzora",
+      "rebranding MEA Ecosystem"
+    ],
+    "url": "/zh/rebranding-produk-mea-ecosystem-yang-akan-datang.html",
+    "lang": "zh"
+  },
+  {
+    "id": "rebranding-produk-mea-ecosystem-yang-akan-datang",
+    "title": "예정된 MEA Ecosystem 제품 리브랜딩",
+    "desc": "MEA Link, MEA Data, MEA Trade, MEA Play 등 4개 제품도 Selfolyx, Daivora, Bursalyx, Playzora로 이름이 바뀔 예정입니다. 이 리브랜딩 계획은 아직 준비 단계이며 완전히 실행되지는 않았습니다.",
+    "category": "tentang",
+    "date": "2026-10-23",
+    "icon": "gift",
+    "keywords": [
+      "Selfolyx",
+      "Daivora",
+      "Bursalyx",
+      "Playzora",
+      "rebranding MEA Ecosystem"
+    ],
+    "url": "/ko/rebranding-produk-mea-ecosystem-yang-akan-datang.html",
+    "lang": "ko"
   },
   {
     "id": "mea-blog-ganti-nama-jadi-vonetra",

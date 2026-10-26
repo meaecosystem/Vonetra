@@ -44,8 +44,12 @@ INTER_SEMIBOLD = str(ASSETS / "fonts" / "Inter-SemiBold.otf")
 INTER_MEDIUM = str(ASSETS / "fonts" / "Inter-Medium.otf")
 
 # Noto Sans CJK, satu file .ttc multi-bahasa (JP=0, KR=1, SC/zh=2).
+# Sengaja cuma pakai Bold & Regular -- itu satu-satunya weight yang
+# ikut ke-install dari paket apt "fonts-noto-cjk" biasa (ringan).
+# Weight lain (Medium, Black, dst) cuma ada di "fonts-noto-cjk-extra"
+# yang jauh lebih berat, jadi nggak dipakai di sini.
 NOTO_CJK_BOLD = "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc"
-NOTO_CJK_MEDIUM = "/usr/share/fonts/opentype/noto/NotoSansCJK-Medium.ttc"
+NOTO_CJK_REGULAR = "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"
 CJK_FACE_INDEX = {"ja": 0, "ko": 1, "zh": 2}
 
 ARTICLES_JSON = ROOT / "data" / "articles.json"
@@ -66,7 +70,7 @@ def bold_font(lang, size):
 
 def medium_font(lang, size):
     if lang in CJK_FACE_INDEX:
-        return ImageFont.truetype(NOTO_CJK_MEDIUM, size, index=CJK_FACE_INDEX[lang])
+        return ImageFont.truetype(NOTO_CJK_REGULAR, size, index=CJK_FACE_INDEX[lang])
     return ImageFont.truetype(INTER_SEMIBOLD, size)
 
 

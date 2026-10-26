@@ -1,0 +1,40 @@
+name: Sync sitemap
+
+# Jalan otomatis tiap articles.json berubah (artikel baru/update),
+# biar sitemap.xml nggak perlu di-update manual lagi.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/articles.json"
+      - "scripts/generate_sitemap.py"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync-sitemap:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate ulang sitemap.xml
+        run: python3 scripts/generate_sitemap.py
+
+      - name: Commit & push kalau ada perubahan
+        run: |
+          git config user.name "Vonetra Bot"
+          git config user.email "bot@vonetra.meaecosystem.com"
+          if git diff --quiet; then
+            echo "Sitemap sudah sinkron, tidak ada yang perlu di-commit."
+          else
+            git add sitemap.xml
+            git commit -m "chore: sinkronkan sitemap.xml otomatis"
+            git push
+          fi

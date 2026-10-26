@@ -116,6 +116,77 @@ ul, ol { list-style: none; }
 }
 
 /* ============================================================
+   404 PAGE
+   ============================================================ */
+
+.mea-404-wrap {
+  min-height: calc(100vh - 160px);
+  min-height: calc(100dvh - 160px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 14px;
+  padding: 48px 20px;
+}
+
+.mea-404-num {
+  font-family: var(--font-display);
+  font-size: clamp(90px, 20vw, 160px);
+  line-height: 1;
+  background: var(--mea-brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.mea-404-wrap h1 {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 4vw, 30px);
+  color: var(--mea-text-primary);
+}
+
+.mea-404-wrap p {
+  max-width: 440px;
+  color: var(--mea-text-secondary);
+  line-height: 1.6;
+}
+
+.mea-404-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mea-404-actions a {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 11px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.mea-404-btn-primary {
+  background: var(--mea-accent);
+  color: #fff;
+}
+.mea-404-btn-primary:hover { background: var(--mea-accent-hover); color: #fff; }
+
+.mea-404-btn-ghost {
+  border: 1px solid var(--mea-border-strong);
+  color: var(--mea-text-primary);
+}
+.mea-404-btn-ghost:hover {
+  border-color: var(--mea-accent);
+  background: var(--mea-accent-muted);
+  color: var(--mea-accent-text);
+}
+
+/* ============================================================
    NAVBAR
    ============================================================ */
 

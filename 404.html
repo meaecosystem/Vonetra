@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>404 — Halaman Tidak Ditemukan | Vonetra</title>
+<meta name="description" content="Halaman yang kamu cari tidak ditemukan di Vonetra." />
+<meta name="robots" content="noindex, follow" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/icon/mea-vonetra-thick.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+</head>
+<body data-lang-current="id">
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/icon/mea-vonetra-thick.svg" alt="" class="logo-glow" />
+      <span class="brand">Vonetra</span>
+    </a>
+  </div>
+</header>
+
+<main class="container">
+  <section class="mea-404-wrap">
+    <div class="mea-404-num">404</div>
+    <h1 id="mea-404-title">Halaman Tidak Ditemukan</h1>
+    <p id="mea-404-desc">Halaman yang kamu cari mungkin sudah dipindahkan, diganti namanya, atau memang belum pernah ada.</p>
+    <div class="mea-404-actions">
+      <a href="/" id="mea-404-home" class="mea-404-btn-primary">Kembali ke Beranda</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">Vonetra</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* Cloudflare Pages nge-serve file ini apa adanya buat SEMUA path yang
+     nggak ketemu, jadi nggak tau bahasa dari server. Makanya teksnya
+     dilokalin di sini, dari prefix bahasa di URL yang diminta. */
+  (function () {
+    var I18N = {
+      id: { title: "Halaman Tidak Ditemukan", desc: "Halaman yang kamu cari mungkin sudah dipindahkan, diganti namanya, atau memang belum pernah ada.", home: "Kembali ke Beranda", homePath: "/" },
+      en: { title: "Page Not Found", desc: "The page you're looking for may have moved, been renamed, or never existed.", home: "Back to Home", homePath: "/en/" },
+      ja: { title: "ページが見つかりません", desc: "お探しのページは移動または削除されたか、存在しない可能性があります。", home: "ホームに戻る", homePath: "/ja/" },
+      zh: { title: "页面未找到", desc: "您要查找的页面可能已被移动、重命名，或从未存在过。", home: "返回首页", homePath: "/zh/" },
+      ko: { title: "페이지를 찾을 수 없습니다", desc: "찾으시는 페이지가 이동되었거나 이름이 변경되었거나 애초에 존재하지 않을 수 있습니다.", home: "홈으로 돌아가기", homePath: "/ko/" },
+    };
+    var seg = location.pathname.split("/").filter(Boolean)[0];
+    var lang = I18N[seg] ? seg : "id";
+    var t = I18N[lang];
+    document.documentElement.lang = lang;
+    document.getElementById("mea-404-title").textContent = t.title;
+    document.getElementById("mea-404-desc").textContent = t.desc;
+    var homeBtn = document.getElementById("mea-404-home");
+    homeBtn.textContent = t.home;
+    homeBtn.href = t.homePath;
+  })();
+</script>
+</body>
+</html>

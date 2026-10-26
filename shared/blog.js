@@ -15,32 +15,47 @@ const BLOG_I18N = {
     sorts: { newest: "Terbaru", oldest: "Terlama", az: "A–Z" },
     searchPlaceholder: "Cari artikel… misal 'pdf ke gambar'",
     emptyState: "Belum ada artikel yang cocok. Coba kata kunci lain.",
+    loadMore: "Muat lebih banyak",
+    showingCount: function (shown, total) { return "Menampilkan " + shown + " dari " + total + " artikel"; },
   },
   en: {
     categories: { all: "All", convert: "Convert", image: "Image", text: "Text", privasi: "Privacy & Security", riset: "Research & AI", utilitas: "Utilities", tentang: "About" },
     sorts: { newest: "Newest", oldest: "Oldest", az: "A–Z" },
     searchPlaceholder: "Search articles… e.g. 'pdf to image'",
     emptyState: "No matching articles yet. Try another keyword.",
+    loadMore: "Load more",
+    showingCount: function (shown, total) { return "Showing " + shown + " of " + total + " articles"; },
   },
   ja: {
     categories: { all: "すべて", convert: "変換", image: "画像", text: "テキスト", privasi: "プライバシー＆セキュリティ", riset: "リサーチ＆AI", utilitas: "ユーティリティ", tentang: "について" },
     sorts: { newest: "新着順", oldest: "古い順", az: "A–Z" },
     searchPlaceholder: "記事を検索…例：「pdf 画像変換」",
     emptyState: "該当する記事がまだありません。別のキーワードを試してください。",
+    loadMore: "もっと見る",
+    showingCount: function (shown, total) { return total + "件中" + shown + "件を表示"; },
   },
   zh: {
     categories: { all: "全部", convert: "转换", image: "图片", text: "文本", privasi: "隐私与安全", riset: "研究与AI", utilitas: "实用工具", tentang: "关于" },
     sorts: { newest: "最新", oldest: "最早", az: "A–Z" },
     searchPlaceholder: "搜索文章…例如「pdf 转图片」",
     emptyState: "暂无匹配的文章，试试其他关键词。",
+    loadMore: "加载更多",
+    showingCount: function (shown, total) { return "显示 " + shown + " / " + total + " 篇文章"; },
   },
   ko: {
     categories: { all: "전체", convert: "변환", image: "이미지", text: "텍스트", privasi: "개인정보 & 보안", riset: "연구 & AI", utilitas: "유틸리티", tentang: "소개" },
     sorts: { newest: "최신순", oldest: "오래된순", az: "A–Z" },
     searchPlaceholder: "글 검색… 예: 'pdf 이미지 변환'",
     emptyState: "일치하는 글이 아직 없습니다. 다른 키워드를 시도해 보세요.",
+    loadMore: "더 보기",
+    showingCount: function (shown, total) { return "전체 " + total + "개 중 " + shown + "개 표시"; },
   },
 };
+
+/* Jumlah kartu yang ditampilkan per "batch". Di-render pakai tombol
+   "Muat lebih banyak", bukan numbered pagination -- biar nggak perlu
+   reload/scroll-to-top dan state filter/search tetap jalan normal. */
+const BLOG_PAGE_SIZE = 24;
 
 const BLOG_CATEGORY_ORDER = ["all", "convert", "image", "text", "privasi", "riset", "utilitas", "tentang"];
 const BLOG_SORT_ORDER = ["newest", "oldest", "az"];
@@ -89,6 +104,13 @@ function meaIconSvg(key) {
   let activeCategory = "all";
   let activeSort = "newest";
   let query = "";
+  let visibleCount = BLOG_PAGE_SIZE;
+
+  // Wrapper buat tombol "Muat lebih banyak" + info "Menampilkan X dari Y",
+  // dibikin sekali sebagai sibling dari grid (bukan hardcode di index.html).
+  const loadMoreWrap = document.createElement("div");
+  loadMoreWrap.className = "mea-load-more-wrap";
+  gridEl.insertAdjacentElement("afterend", loadMoreWrap);
 
   function renderCategories() {
     catEl.innerHTML = BLOG_CATEGORY_ORDER.map(function (catId) {
@@ -101,7 +123,7 @@ function meaIconSvg(key) {
       btn.addEventListener("click", function () {
         activeCategory = btn.getAttribute("data-cat");
         renderCategories();
-        renderGrid();
+        resetPagingAndRender();
       });
     });
   }
@@ -112,6 +134,11 @@ function meaIconSvg(key) {
       return '<option value="' + sortId + '">' + (i18n.sorts[sortId] || sortId) + "</option>";
     }).join("");
     sortEl.value = activeSort;
+  }
+
+  function resetPagingAndRender() {
+    visibleCount = BLOG_PAGE_SIZE;
+    renderGrid();
   }
 
   function matchesQuery(article, q) {
@@ -144,10 +171,13 @@ function meaIconSvg(key) {
 
     if (filtered.length === 0) {
       gridEl.innerHTML = '<div class="mea-empty-state">' + i18n.emptyState + '</div>';
+      loadMoreWrap.innerHTML = "";
       return;
     }
 
-    gridEl.innerHTML = filtered.map(function (a) {
+    const visible = filtered.slice(0, visibleCount);
+
+    gridEl.innerHTML = visible.map(function (a) {
       const catLabel = i18n.categories[a.category] || a.category;
       return (
         '<a href="' + a.url + '" class="mea-article-card glass">' +
@@ -159,6 +189,23 @@ function meaIconSvg(key) {
         "</a>"
       );
     }).join("");
+
+    renderLoadMore(visible.length, filtered.length);
+  }
+
+  function renderLoadMore(shown, total) {
+    if (shown >= total) {
+      loadMoreWrap.innerHTML = "";
+      return;
+    }
+    loadMoreWrap.innerHTML =
+      '<span class="mea-load-more-count">' + i18n.showingCount(shown, total) + "</span>" +
+      '<button type="button" class="mea-load-more-btn">' + i18n.loadMore + "</button>";
+    const btn = loadMoreWrap.querySelector(".mea-load-more-btn");
+    btn.addEventListener("click", function () {
+      visibleCount += BLOG_PAGE_SIZE;
+      renderGrid();
+    });
   }
 
   fetch("/data/articles.json")
@@ -178,14 +225,14 @@ function meaIconSvg(key) {
   if (searchEl) {
     searchEl.addEventListener("input", function () {
       query = searchEl.value;
-      renderGrid();
+      resetPagingAndRender();
     });
   }
 
   if (sortEl) {
     sortEl.addEventListener("change", function () {
       activeSort = sortEl.value;
-      renderGrid();
+      resetPagingAndRender();
     });
   }
 })();

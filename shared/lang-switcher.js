@@ -19,11 +19,11 @@
 
 (function () {
   const LANGS = [
-    { code: "id", label: "Bahasa Indonesia", flag: "🇮🇩" },
-    { code: "en", label: "English", flag: "🇬🇧" },
-    { code: "ja", label: "日本語", flag: "🇯🇵" },
-    { code: "ko", label: "한국어", flag: "🇰🇷" },
-    { code: "zh", label: "中文", flag: "🇨🇳" },
+    { code: "id", label: "Bahasa Indonesia" },
+    { code: "en", label: "English" },
+    { code: "ja", label: "日本語" },
+    { code: "ko", label: "한국어" },
+    { code: "zh", label: "中文" },
   ];
 
   function init() {
@@ -49,7 +49,6 @@
     btn.setAttribute("aria-haspopup", "true");
     btn.setAttribute("aria-expanded", "false");
     btn.innerHTML =
-      '<span class="lang-switcher-flag">' + currentMeta.flag + "</span>" +
       '<span>' + currentMeta.code.toUpperCase() + "</span>" +
       '<svg class="lang-switcher-caret" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
@@ -66,7 +65,6 @@
       item.href = available ? links[lang.code] : "/" + lang.code + "/";
 
       item.innerHTML =
-        '<span class="lang-switcher-flag">' + lang.flag + "</span>" +
         "<span>" + lang.label + "</span>" +
         (available ? "" : '<span class="lang-switcher-note">Segera</span>');
 

@@ -5183,5 +5183,90 @@
       "MEA Ecosystem 디자인 시스템"
     ],
     "lang": "ko"
+  },
+  {
+    "id": "hydrafusion-github-copilot-orkestrasi-ai",
+    "title": "HydraFusion: Cara GitHub Copilot Mengorkestrasi Banyak Model AI Sekaligus",
+    "desc": "GitHub memperluas HydraFusion ke VS Code dan aplikasi Copilot. Bukan model baru, ini sistem orkestrasi yang memilih dan mengombinasikan beberapa model AI sekaligus untuk satu task coding.",
+    "category": "riset",
+    "url": "/id/hydrafusion-github-copilot-orkestrasi-ai.html",
+    "date": "2026-10-30",
+    "icon": "ai",
+    "keywords": [
+      "HydraFusion",
+      "GitHub Copilot",
+      "orkestrasi model AI",
+      "AI coding agent",
+      "Copilot CLI"
+    ],
+    "lang": "id"
+  },
+  {
+    "id": "hydrafusion-github-copilot-orkestrasi-ai",
+    "title": "HydraFusion: How GitHub Copilot Orchestrates Multiple AI Models at Once",
+    "desc": "GitHub has expanded HydraFusion to VS Code and the Copilot app. It's not a new model -- it's an orchestration system that picks and combines multiple AI models for a single coding task.",
+    "category": "riset",
+    "url": "/en/hydrafusion-github-copilot-orkestrasi-ai.html",
+    "date": "2026-10-30",
+    "icon": "ai",
+    "keywords": [
+      "HydraFusion",
+      "GitHub Copilot",
+      "AI model orchestration",
+      "AI coding agent",
+      "Copilot CLI"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "hydrafusion-github-copilot-orkestrasi-ai",
+    "title": "HydraFusion：GitHub Copilotが複数のAIモデルを同時にオーケストレーションする仕組み",
+    "desc": "GitHubはHydraFusionをVS CodeとCopilotアプリに拡張しました。新しいモデルではなく、1つのコーディングタスクに対して複数のAIモデルを選択・組み合わせるオーケストレーションシステムです。",
+    "category": "riset",
+    "url": "/ja/hydrafusion-github-copilot-orkestrasi-ai.html",
+    "date": "2026-10-30",
+    "icon": "ai",
+    "keywords": [
+      "HydraFusion",
+      "GitHub Copilot",
+      "AIモデルオーケストレーション",
+      "AIコーディングエージェント",
+      "Copilot CLI"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "hydrafusion-github-copilot-orkestrasi-ai",
+    "title": "HydraFusion：GitHub Copilot 如何同时编排多个 AI 模型",
+    "desc": "GitHub 已将 HydraFusion 扩展到 VS Code 和 Copilot 应用。这不是新模型，而是一个为单个编码任务挑选并组合多个 AI 模型的编排系统。",
+    "category": "riset",
+    "url": "/zh/hydrafusion-github-copilot-orkestrasi-ai.html",
+    "date": "2026-10-30",
+    "icon": "ai",
+    "keywords": [
+      "HydraFusion",
+      "GitHub Copilot",
+      "AI 模型编排",
+      "AI 编码代理",
+      "Copilot CLI"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "hydrafusion-github-copilot-orkestrasi-ai",
+    "title": "HydraFusion: GitHub Copilot가 여러 AI 모델을 동시에 오케스트레이션하는 방법",
+    "desc": "GitHub가 HydraFusion을 VS Code와 Copilot 앱으로 확장했습니다. 새로운 모델이 아니라, 하나의 코딩 작업을 위해 여러 AI 모델을 선택하고 조합하는 오케스트레이션 시스템입니다.",
+    "category": "riset",
+    "url": "/ko/hydrafusion-github-copilot-orkestrasi-ai.html",
+    "date": "2026-10-30",
+    "icon": "ai",
+    "keywords": [
+      "HydraFusion",
+      "GitHub Copilot",
+      "AI 모델 오케스트레이션",
+      "AI 코딩 에이전트",
+      "Copilot CLI"
+    ],
+    "lang": "ko"
   }
 ]

@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://vonetra.meaecosystem.com/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="id" href="https://vonetra.meaecosystem.com/" />
@@ -15,7 +15,7 @@
   </url>
   <url>
     <loc>https://vonetra.meaecosystem.com/en/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="id" href="https://vonetra.meaecosystem.com/" />
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://vonetra.meaecosystem.com/ja/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="id" href="https://vonetra.meaecosystem.com/" />
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://vonetra.meaecosystem.com/zh/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="id" href="https://vonetra.meaecosystem.com/" />
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://vonetra.meaecosystem.com/ko/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="id" href="https://vonetra.meaecosystem.com/" />
@@ -3900,5 +3900,65 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://vonetra.meaecosystem.com/zh/icon-dan-logo-mea-ecosystem.html" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://vonetra.meaecosystem.com/ko/icon-dan-logo-mea-ecosystem.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vonetra.meaecosystem.com/id/icon-dan-logo-mea-ecosystem.html" />
+  </url>
+  <url>
+    <loc>https://vonetra.meaecosystem.com/id/hydrafusion-github-copilot-orkestrasi-ai.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="id" href="https://vonetra.meaecosystem.com/id/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vonetra.meaecosystem.com/en/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://vonetra.meaecosystem.com/ja/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://vonetra.meaecosystem.com/zh/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://vonetra.meaecosystem.com/ko/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vonetra.meaecosystem.com/id/hydrafusion-github-copilot-orkestrasi-ai.html" />
+  </url>
+  <url>
+    <loc>https://vonetra.meaecosystem.com/en/hydrafusion-github-copilot-orkestrasi-ai.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="id" href="https://vonetra.meaecosystem.com/id/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vonetra.meaecosystem.com/en/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://vonetra.meaecosystem.com/ja/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://vonetra.meaecosystem.com/zh/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://vonetra.meaecosystem.com/ko/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vonetra.meaecosystem.com/id/hydrafusion-github-copilot-orkestrasi-ai.html" />
+  </url>
+  <url>
+    <loc>https://vonetra.meaecosystem.com/ja/hydrafusion-github-copilot-orkestrasi-ai.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="id" href="https://vonetra.meaecosystem.com/id/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vonetra.meaecosystem.com/en/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://vonetra.meaecosystem.com/ja/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://vonetra.meaecosystem.com/zh/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://vonetra.meaecosystem.com/ko/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vonetra.meaecosystem.com/id/hydrafusion-github-copilot-orkestrasi-ai.html" />
+  </url>
+  <url>
+    <loc>https://vonetra.meaecosystem.com/zh/hydrafusion-github-copilot-orkestrasi-ai.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="id" href="https://vonetra.meaecosystem.com/id/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vonetra.meaecosystem.com/en/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://vonetra.meaecosystem.com/ja/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://vonetra.meaecosystem.com/zh/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://vonetra.meaecosystem.com/ko/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vonetra.meaecosystem.com/id/hydrafusion-github-copilot-orkestrasi-ai.html" />
+  </url>
+  <url>
+    <loc>https://vonetra.meaecosystem.com/ko/hydrafusion-github-copilot-orkestrasi-ai.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="id" href="https://vonetra.meaecosystem.com/id/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vonetra.meaecosystem.com/en/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://vonetra.meaecosystem.com/ja/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://vonetra.meaecosystem.com/zh/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://vonetra.meaecosystem.com/ko/hydrafusion-github-copilot-orkestrasi-ai.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vonetra.meaecosystem.com/id/hydrafusion-github-copilot-orkestrasi-ai.html" />
   </url>
 </urlset>

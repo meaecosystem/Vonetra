@@ -5098,5 +5098,90 @@
       "selfolyx.meaecosystem.com"
     ],
     "lang": "ko"
+  },
+  {
+    "id": "icon-dan-logo-mea-ecosystem",
+    "title": "Icon & Logo MEA Ecosystem: Satu Sistem Desain untuk Semua Produk",
+    "desc": "Kenalan sama logo MEA Ecosystem, logo Siesta, dan sistem icon turunan yang dipakai di semua produknya -- dari Vonetra sampai NeracaQ -- lengkap dengan arti bentuk tiap icon kalau sudah didokumentasikan.",
+    "category": "tentang",
+    "url": "/id/icon-dan-logo-mea-ecosystem.html",
+    "date": "2026-10-28",
+    "icon": "gift",
+    "keywords": [
+      "icon MEA Ecosystem",
+      "logo MEA Ecosystem",
+      "logo Siesta",
+      "sistem icon produk",
+      "design system MEA Ecosystem"
+    ],
+    "lang": "id"
+  },
+  {
+    "id": "icon-dan-logo-mea-ecosystem",
+    "title": "MEA Ecosystem Icons & Logo: One Design System for All Products",
+    "desc": "Meet the MEA Ecosystem logo, the Siesta logo, and the derived icon system used across all its products -- from Vonetra to NeracaQ -- complete with each icon's documented shape meaning.",
+    "category": "tentang",
+    "url": "/en/icon-dan-logo-mea-ecosystem.html",
+    "date": "2026-10-28",
+    "icon": "gift",
+    "keywords": [
+      "MEA Ecosystem icons",
+      "MEA Ecosystem logo",
+      "Siesta logo",
+      "product icon system",
+      "MEA Ecosystem design system"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "icon-dan-logo-mea-ecosystem",
+    "title": "MEA Ecosystem のアイコン＆ロゴ：全製品共通のデザインシステム",
+    "desc": "VonetraからNeracaQまで、すべての製品が使うMEA Ecosystemのロゴ、Siestaのロゴ、派生アイコンシステムを紹介。公式に記録されている場合は各アイコンの形の意味も解説します。",
+    "category": "tentang",
+    "url": "/ja/icon-dan-logo-mea-ecosystem.html",
+    "date": "2026-10-28",
+    "icon": "gift",
+    "keywords": [
+      "MEA Ecosystem アイコン",
+      "MEA Ecosystem ロゴ",
+      "Siesta ロゴ",
+      "製品アイコンシステム",
+      "MEA Ecosystem デザインシステム"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "icon-dan-logo-mea-ecosystem",
+    "title": "MEA Ecosystem 图标与标志：所有产品共用的设计系统",
+    "desc": "认识 MEA Ecosystem 的标志、Siesta 的标志，以及所有产品共用的衍生图标系统——从 Vonetra 到 NeracaQ，并附上每个图标已被记录在案的形状含义。",
+    "category": "tentang",
+    "url": "/zh/icon-dan-logo-mea-ecosystem.html",
+    "date": "2026-10-28",
+    "icon": "gift",
+    "keywords": [
+      "MEA Ecosystem 图标",
+      "MEA Ecosystem 标志",
+      "Siesta 标志",
+      "产品图标系统",
+      "MEA Ecosystem 设计系统"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "icon-dan-logo-mea-ecosystem",
+    "title": "MEA Ecosystem 아이콘 & 로고: 모든 제품이 공유하는 디자인 시스템",
+    "desc": "Vonetra부터 NeracaQ까지, 모든 제품이 사용하는 MEA Ecosystem 로고, Siesta 로고, 파생 아이콘 시스템을 소개합니다. 공식적으로 문서화된 경우 각 아이콘의 의미도 함께 담았습니다.",
+    "category": "tentang",
+    "url": "/ko/icon-dan-logo-mea-ecosystem.html",
+    "date": "2026-10-28",
+    "icon": "gift",
+    "keywords": [
+      "MEA Ecosystem 아이콘",
+      "MEA Ecosystem 로고",
+      "Siesta 로고",
+      "제품 아이콘 시스템",
+      "MEA Ecosystem 디자인 시스템"
+    ],
+    "lang": "ko"
   }
 ]

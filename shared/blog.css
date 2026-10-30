@@ -1201,3 +1201,61 @@ ul, ol { list-style: none; }
   .footer-row { justify-content: flex-start; }
   .footer-row-top .footer-copyright { order: 3; width: 100%; }
 }
+
+.mea-icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 14px;
+  margin: 20px 0 28px;
+}
+
+.mea-icon-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.mea-icon-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.mea-icon-card h3 {
+  font-size: 15px;
+  margin: 0 0 4px;
+}
+
+.mea-icon-card p {
+  font-size: 13px;
+  color: var(--mea-text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.mea-logo-showcase {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  padding: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.mea-logo-showcase img {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .mea-icon-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+}

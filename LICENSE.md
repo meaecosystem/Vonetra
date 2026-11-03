@@ -1,28 +1,48 @@
-# MEA Open License (MEA-OL) — v2.0
+# MEA Ecosystem License — v2.0
 
 **Bahasa Indonesia** (versi mengikat secara teknis/operasional — lihat
-Bagian 10) · [**English**](#mea-open-license-mea-ol--v20-english)
+Bagian 10) · [**English**](#mea-ecosystem-license--v20-english)
 
 **Tanggal efektif:** 1 November 2026
 **Pemegang hak:** MEA Ecosystem (M. Evan Almunawar)
-**Riwayat versi:** v1.0 (Oktober 2026, sebagai `MEA-LICENSE.md`) → v2.0 (versi ini)
+**Riwayat versi:** v1.0 (Oktober 2026, sebagai `MEA-LICENSE.md`) → v2.0 (versi ini, sebelumnya sempat bernama "MEA Open License")
 
 ---
 
-## 1. Cakupan
+## 1. Cakupan — Status Default Tertutup
 
-Lisensi ini berlaku untuk karya (kode, dataset, model, dokumen, aset
-desain, atau karya lain) yang secara eksplisit menyatakan tunduk pada
-"MEA Open License" atau "MEA-OL", yang dirilis oleh **MEA Ecosystem**.
+**Status default seluruh karya MEA Ecosystem (kode, desain, logo, ikon,
+dokumen, produk, dan aset lainnya) adalah tertutup (all rights
+reserved)** — bukan terbuka. Lisensi ini **tidak** membuka hak pakai,
+salin, atau distribusi ulang atas karya MEA Ecosystem secara umum.
 
-Lisensi ini **tidak otomatis berlaku** untuk seluruh isi suatu repo atau
-dataset hanya karena repo/dataset itu dimiliki MEA Ecosystem — materi
-pihak ketiga yang disertakan (kode, data, atau aset dari sumber lain)
-tetap tunduk pada lisensi aslinya masing-masing, bukan lisensi ini.
-Lisensi ini **tidak memberikan hak apa pun** atas materi pihak ketiga
-tersebut. Jika suatu karya menggabungkan materi berlisensi berbeda,
-lihat dokumen addendum karya tersebut (jika ada) untuk rincian per
-sumber.
+Lisensi ini **hanya berlaku** untuk karya yang **secara eksplisit**
+dinyatakan tunduk pada "MEA Ecosystem License", melalui salah satu dari:
+
+- Dokumen `LICENSE.md` ini disertakan langsung di dalam repositori/
+  rilisan karya tersebut, **dan**
+- Karya tersebut secara eksplisit menyatakan statusnya terbuka
+  (misalnya lewat dokumen addendum spesifik karya, seperti
+  `ADDENDUM-PUSTAKA.md` atau `ADDENDUM-SIESTA.md`, atau pernyataan
+  jelas lain dari MEA Ecosystem bahwa karya tersebut dirilis di bawah
+  lisensi ini).
+
+Contoh penerapan: dataset [Pustaka](https://huggingface.co/datasets/meaecosystem/pustaka)
+dan model Siesta secara eksplisit dirilis terbuka di bawah lisensi ini
+(lihat addendum masing-masing). Sebaliknya, kode produk seperti
+Forgelyx, aset desain (logo, ikon), dan konten produk pada umumnya
+**tetap tertutup** — kehadiran dokumen ini di suatu repositori teknis
+MEA Ecosystem (misalnya untuk keperluan referensi internal) **tidak**
+dengan sendirinya membuka karya di repositori tersebut, kecuali
+dinyatakan eksplisit sebagaimana di atas.
+
+Untuk karya yang memang berstatus terbuka di bawah lisensi ini: materi
+pihak ketiga yang ikut disertakan (kode, data, atau aset dari sumber
+lain) tetap tunduk pada lisensi aslinya masing-masing, bukan lisensi
+ini. Lisensi ini **tidak memberikan hak apa pun** atas materi pihak
+ketiga tersebut. Jika suatu karya menggabungkan materi berlisensi
+berbeda, lihat dokumen addendum karya tersebut (jika ada) untuk rincian
+per sumber.
 
 ## 2. Hak yang Diberikan
 
@@ -42,7 +62,7 @@ metadata internal, komentar kode yang tidak pernah ditampilkan, atau
 lokasi yang secara praktis tidak akan ditemukan pengguna:
 
 > "Berbasis/menggunakan [nama karya] oleh MEA Ecosystem
-> (https://meaecosystem.com), dilisensikan di bawah MEA Open License."
+> (https://meaecosystem.com), dilisensikan di bawah MEA Ecosystem License."
 
 **Lokasi atribusi yang dianggap sah** (pilih sesuai jenis karya turunan):
 README atau dokumentasi utama karya turunan; halaman "About"/"Credits"
@@ -144,11 +164,11 @@ berlaku.
 
 ---
 
-# MEA Open License (MEA-OL) — v2.0 (English)
+# MEA Ecosystem License — v2.0 (English)
 
 **Effective date:** November 1, 2026
 **Rights holder:** MEA Ecosystem (M. Evan Almunawar)
-**Version history:** v1.0 (October 2026, as `MEA-LICENSE.md`) → v2.0 (this version)
+**Version history:** v1.0 (October 2026, as `MEA-LICENSE.md`) → v2.0 (this version, previously briefly named "MEA Open License")
 
 > This English version is the authoritative text for formal legal
 > purposes (see Section 10). The Indonesian version above is provided
@@ -157,19 +177,38 @@ berlaku.
 
 ---
 
-## 1. Scope
+## 1. Scope — Closed by Default
 
-This license applies to works (code, datasets, models, documents,
-design assets, or other works) that explicitly state they are subject
-to the "MEA Open License" or "MEA-OL", released by **MEA Ecosystem**.
+**The default status of all MEA Ecosystem works (code, design, logos,
+icons, documents, products, and other assets) is closed (all rights
+reserved)** — not open. This license does **not** open up rights to
+use, copy, or redistribute MEA Ecosystem works in general.
 
-This license does **not** automatically apply to an entire repository
-or dataset merely because it is owned by MEA Ecosystem — third-party
-material included within it (code, data, or assets from other sources)
-remains subject to its own original license, not this one. This
-license grants **no rights whatsoever** over such third-party material.
-If a work combines materials under different licenses, see that work's
-addendum document (if any) for per-source details.
+This license **only applies** to works **explicitly** stated to be
+subject to the "MEA Ecosystem License", through either of:
+
+- This `LICENSE.md` document is included directly within the
+  repository/release of that work, **and**
+- That work explicitly states its open status (for example, through a
+  work-specific addendum document, such as `ADDENDUM-PUSTAKA.md` or
+  `ADDENDUM-SIESTA.md`, or another clear statement from MEA Ecosystem
+  that the work is released under this license).
+
+Example application: the [Pustaka](https://huggingface.co/datasets/meaecosystem/pustaka)
+dataset and the Siesta model are explicitly released as open under
+this license (see their respective addenda). Conversely, product code
+such as Forgelyx, design assets (logos, icons), and product content in
+general **remain closed** — the presence of this document in a MEA
+Ecosystem technical repository (for example, for internal reference
+purposes) does **not** by itself open up the works in that repository,
+unless explicitly stated as above.
+
+For works that are indeed open under this license: any third-party
+material included within them (code, data, or assets from other
+sources) remains subject to its own original license, not this one.
+This license grants **no rights whatsoever** over such third-party
+material. If a work combines materials under different licenses, see
+that work's addendum document (if any) for per-source details.
 
 ## 2. Rights Granted
 
@@ -189,7 +228,7 @@ metadata, code comments that are never rendered, or a location a user
 would not practically find:
 
 > "Based on/uses [work name] by MEA Ecosystem
-> (https://meaecosystem.com), licensed under the MEA Open License."
+> (https://meaecosystem.com), licensed under the MEA Ecosystem License."
 
 **Locations considered valid** (choose based on the type of derivative
 work): the derivative work's main README or documentation; the
